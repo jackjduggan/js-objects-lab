@@ -8,6 +8,10 @@ const aCar = {
         }
     },
     owner : "Joe Bloggs",
+    previousOwners: [
+        {name: "Pat Smith", address: "1 Main Street"},
+        {name: "Sheila", address: "2 High Street"},
+    ],
     type : { 
         make: 'Toyota', 
         model: 'Corolla 1.8',
@@ -26,3 +30,4 @@ const aCar = {
   console.log('It is a ' + aCar.colour.exterior + ' car, '
   + aCar.mileage + ' mileage, with ' + aCar.colour.interiorFabric.texture 
   + ' interior');
+  console.log('First Owner : ' + aCar.previousOwners[0].name +', '+ aCar.previousOwners[0].address);
